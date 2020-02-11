@@ -5,9 +5,19 @@
  * Description: call print_alphabet() x10
  * Return: sucessful alphabet
  */
-void print_alphabet_x10(void) {
-	int i;
-	for(i=0;i<10;i++) {
-		print_alphabet();
+void print_alphabet_x10(void)
+{
+	char i ;
+	int j ;
+
+	for (j = 1; j <= 10; j++)
+
+	{
+		
+		for (i = 'a'; i <= 'z'; i++)
+	{
+			_putchar(i);
+		}
+		_putchar('\n');
 	}
 }
