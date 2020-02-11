@@ -1,19 +1,18 @@
 #include "holberton.h"
 
 /**
- * print_alphabet - it works with defined prototype variables
+ * print_alphabet - print alphabet lowercase
  *
- * Description: Write program to print "a to z" using _putchar
+ * Description: print "a to z" using _putchar
  * Return: sucessful alphabet
  */
 
 void print_alphabet(void)
 {
-	char alphabet;
-
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+char c;
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(alphabet);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
