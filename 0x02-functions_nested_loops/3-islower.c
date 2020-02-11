@@ -1,7 +1,9 @@
 #include "holberton.h"
 
 /**
- * _islower : checks if c is lowercase
+ * _islower - Works with defined prototype variables
+ * Will detect if a letter is lowercase returning 1
+ * @c: is char type variable
  * Return: 1 of 0
  */
 
