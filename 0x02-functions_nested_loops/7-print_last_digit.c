@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-* print last_digit - works with defined prototype variables
+* print_last_digit - works with defined prototype variables
 * Print last digit of a number
-* h : is a int type variable
+* @h : is a int type variable
 * Return: h as a last digit of a number
 */
 
