@@ -2,8 +2,9 @@
 #include "holberton.h"
 
 /**
-* print_to_98  works with defined prototype variables
+* print_to_98 - works with defined prototype variables
 * Description: prints all natural numbers from n to 98
+* @n: takes an int
 * Return: prints all natural numbers from n to 98
 */
 
