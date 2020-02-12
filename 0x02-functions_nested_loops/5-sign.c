@@ -1,10 +1,9 @@
 #include "holberton.h"
 
 /**
- * description: print_sign works with prototype variable
- * @n: is a int type variable
- * Return: 1 if is > 0, 0 if is = 0 and -1 if is < 0
- */
+* print_sign works with prototype variable - Short description * @n: is a int type variable
+* Return: 1 if is > 0, 0 if is = 0 and -1 if is < 0
+*/
 
 int print_sign(int n)
 {
