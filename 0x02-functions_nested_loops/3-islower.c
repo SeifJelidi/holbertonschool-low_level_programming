@@ -1,5 +1,4 @@
 #include "holberton.h"
-i
 /**
  * _islower - Works with defined prototype variables
  * Will detect if a letter is lowercase returning 1
@@ -12,9 +11,5 @@ int _islower(int c)
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	} return (0);
 }
