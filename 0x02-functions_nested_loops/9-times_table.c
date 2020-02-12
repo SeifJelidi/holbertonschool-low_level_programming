@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* times_table  works with defined prototype variables
+* times_table - works with defined prototype variables
 * Description: Print 9 times table
 *
 * Return: 9 times table
@@ -39,5 +39,5 @@ void times_table(void)
 
 		}
 		_putchar('\n');
-	
-}}
+	}
+}
