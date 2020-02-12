@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
-* abs works with defined prototype variables
-* n : is a int type variable
+* _abs - works with defined prototype variables
+* @n : is a int type variable
 * Return: n as an abs absolute integer value
 */
 
