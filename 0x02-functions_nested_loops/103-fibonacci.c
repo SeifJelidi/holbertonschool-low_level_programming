@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main  prints the sum of Fibonacci sequence whose values
+ * main - prints the sum of Fibonacci sequence whose values
  * not exceed 4000000
  * Return: 0
  */
