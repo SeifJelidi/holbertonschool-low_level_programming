@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-  * print_square - prints square
-  *@size: int type variable
-  * Return: 0
-  */
+ * print_square - prints square
+ *@size: int type variable
+ * Return: 0
+ */
 
 void print_square(int size)
 {
