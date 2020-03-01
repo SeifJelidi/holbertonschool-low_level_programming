@@ -8,11 +8,10 @@
 *@argv: pointer that contains the arrays of the arguments
 *Return: 0
 */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
-	printf("Nombre  darguments  passes  au  programme  :%d\n", argc);
 	for (i = 0 ; i < argc ; i++)
 	{
 	printf("argv[%d] : %s\n", i, argv[i]);
