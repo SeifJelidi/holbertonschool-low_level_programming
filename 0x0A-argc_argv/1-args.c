@@ -8,14 +8,8 @@
 *@argv: pointer that contains the arrays of the arguments
 *Return: 0
 */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i;
-
-	for (i = 0 ; i < argc ; i++)
-	{
 	printf("%d\n", argc - 1);
-	printf("argv[%d] : %s\n", i, argv[i]);
-	}
 	return (0);
 }
