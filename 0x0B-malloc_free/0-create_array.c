@@ -5,7 +5,7 @@
 /**
 *create_array - creates a array of chars and initializes it with a char.
 *@size: unsigned int, size of array of chars
-*@c: char type variable. An specific char to initialize array
+*@c: char type variable specific char to initialize array
 *Return: Null if size = 0 or a pointer to the array
 */
 
