@@ -48,7 +48,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		len1 = str_len(s1);
 		len2 = str_len(s2);
-		ch = malloc(sizeof(char) * (len1 + len2) + 2);
+		ch = malloc(sizeof(char) * (len1 + len2) + 1);
 		if (ch == '\0')
 		{
 			return ('\0');
