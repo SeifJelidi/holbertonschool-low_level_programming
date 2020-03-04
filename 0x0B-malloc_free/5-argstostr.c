@@ -64,12 +64,9 @@ char *argstostr(int ac, char **av)
 			ch = _strcat(ch, av[i]);
 			if (ch == NULL)
 				return (NULL);
-			if (i + 1 < ac)
-			{
-				ch = _strcat(ch, "\n");
-				if (ch == NULL)
-					return (NULL);
-			}
+			ch = _strcat(ch, "\n");
+			if (ch == NULL)
+				return (NULL);
 		}
 	}
 	return (ch);
