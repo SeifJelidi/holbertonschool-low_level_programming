@@ -69,5 +69,7 @@ char *argstostr(int ac, char **av)
 				return (NULL);
 		}
 	}
+	if (ch == NULL)
+		return (NULL);
 	return (ch);
 }
