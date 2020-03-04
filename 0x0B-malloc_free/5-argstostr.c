@@ -62,11 +62,12 @@ char *argstostr(int ac, char **av)
 		for (i = 0 ; i < ac ; i++)
 		{
 			ch = _strcat(ch, av[i]);
+			if (ch == NULL)
+				return (NULL);
 			ch = _strcat(ch, "\n");
 			if (ch == NULL)
 				return (NULL);
 		}
 	}
-	ch = _strcat(ch, "\n");
 	return (ch);
 }
