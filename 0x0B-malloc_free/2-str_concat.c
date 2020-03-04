@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * str_len - takes 1 string parameters
- * Description: returns the length of a string
- * @s: a type string
- * Return: length of a string
- */
+* str_len - takes 1 string parameters
+* Description: returns the length of a string
+* @s: a type string
+* Return: length of a string
+*/
 
 int str_len(char *s)
 {
