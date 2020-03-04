@@ -67,5 +67,6 @@ char *argstostr(int ac, char **av)
 				return (NULL);
 		}
 	}
+	ch = _strcat(ch, "\n");
 	return (ch);
 }
