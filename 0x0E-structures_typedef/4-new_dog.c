@@ -51,6 +51,8 @@ int lenString(char *ch)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newDog;
+	char *copyName;
+	char *copyOwner;
 	int lenName;
 	int lenOwner;
 
@@ -64,15 +66,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 	lenName = lenString(name);
 	lenOwner = lenString(owner);
 
-	newDog->name = malloc(sizeof(char) * (lenName + 1));
-	newDog->owner = malloc(sizeof(char) * (lenOwner + 1));
-	if (newDog->name == NULL || newDog->owner == NULL)
+	copyName = malloc(sizeof(char) * (lenName + 1));
+	copyOwner = malloc(sizeof(char) * (lenOwner + 1));
+	if (copyName == NULL || copyOwner == NULL)
 	{
 		free(newDog);
 		return (NULL);
 	}
-	newDog->name = _strcpy(newDog->name, name);
-	newDog->owner = _strcpy(newDog->owner, owner);
+	copyName = _strcpy(copyName, name);
+	copyOwner = _strcpy(copyOwner, owner);
+	newDog->name = copyName;
+	newDog->owner = copyOwner;
 	newDog->age = age;
 
 	return (newDog);
