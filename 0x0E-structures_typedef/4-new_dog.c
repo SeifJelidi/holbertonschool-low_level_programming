@@ -53,8 +53,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *newDog;
 	char *copyName;
 	char *copyOwner;
-	int lenName;
-	int lenOwner;
+	int lenName = 0;
+	int lenOwner = 0;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
