@@ -65,12 +65,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	lenOwner = lenString(owner);
 
 	newDog->name = malloc(lenName + 1);
-	if (newDog->name == NULL)
-		return (NULL);
 	newDog->owner = malloc(lenOwner + 1);
-	if (newDog->owner == NULL)
+	if (newDog->name == NULL || newDog->owner == NULL)
+	{
+		free(newDog);
 		return (NULL);
-
+	}
 	newDog->name = _strcpy(newDog->name, name);
 	newDog->owner = _strcpy(newDog->owner, owner);
 	newDog->age = age;
