@@ -10,6 +10,7 @@ void print_all(const char * const format, ...)
 	va_list list;
 	int i;
 	int notType;
+	char *ch;
 
 	va_start(list, format);
 	for (i = 0 ; format[i] != '\0' ; i++)
@@ -27,7 +28,10 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(list, double));
 				break;
 			case 's':
-				printf("%s", va_arg(list, char*));
+				ch = va_arg(list, char*);
+				if (ch == NULL)
+					ch = "(nil)";
+				printf("%s", ch);
 				break;
 			default:
 				notType = 0;
