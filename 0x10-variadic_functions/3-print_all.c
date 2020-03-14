@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	char *ch;
 
 	va_start(list, format);
-	for (i = 0 ; format[i] != '\0' ; i++)
+	for (i = 0 ; format[i] != '\0' && format ; i++)
 	{
 		notType = 1;
 		switch (format[i])
