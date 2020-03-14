@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	char *ch;
 
 	va_start(list, format);
-	while (format[i] != '\0' && format)
+	while (format && format[i])
 	{
 		notType = 1;
 		switch (format[i])
@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 				printf("%c", va_arg(list, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(list, int));
+				printf("%i", va_arg(list, int));
 				break;
 			case 'f':
 				printf("%f", va_arg(list, double));
@@ -35,7 +35,6 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 				notType = 0;
-				break;
 		}
 		if (notType == 1 && format[i + 1] != '\0')
 			printf(", ");
