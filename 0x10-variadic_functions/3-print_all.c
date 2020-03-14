@@ -8,12 +8,12 @@
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	int i;
+	int i = 0;
 	int notType;
 	char *ch;
 
 	va_start(list, format);
-	for (i = 0 ; format[i] != '\0' && format ; i++)
+	while (format[i] != '\0' && format)
 	{
 		notType = 1;
 		switch (format[i])
@@ -38,6 +38,7 @@ void print_all(const char * const format, ...)
 		}
 		if (notType == 1 && format[i + 1] != '\0')
 			printf(", ");
+		i++;
 	}
 	printf("\n");
 	va_end(list);
