@@ -26,10 +26,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	fileread = read(filedesc, text, letters);
 	if (fileread == -1)
+	{
+		free(text);
 		return (0);
+	}
 	filewrite = write(1, text, fileread);
 	if (filewrite < 0)
+	{
+		free(text);
 		return (0);
+	}
 	free(text);
 	close(filedesc);
 	return (filewrite);
