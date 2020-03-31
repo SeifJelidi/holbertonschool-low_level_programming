@@ -26,14 +26,14 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	while ((fileread = read(file_from, text, 1024)) > 0)
 	{
-		if (fileread == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
 		filewrite = write(file_to, text, fileread);
 		if (filewrite == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+	}
+	if (fileread == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
 	fileread = close(file_from);
 	if (fileread == -1)
