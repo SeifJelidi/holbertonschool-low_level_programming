@@ -16,13 +16,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	filedesc = open(filename, O_RDWR);
-	if (filedesc < 0)
+	if (filedesc == -1)
 		return (0);
 	text = malloc(sizeof(char) * letters);
 	if (text == NULL)
 		return (0);
 	fileread = read(filedesc, text, letters);
-	if (fileread < 0)
+	if (fileread == -1)
 		return (0);
 	filewrite = write(1, text, fileread);
 	if (filewrite < 0)
